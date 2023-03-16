@@ -50,7 +50,7 @@ const addManager = () => {
 
 // employees question
 const addEmployee = () => {
-  console.log(`Adding employees to the team!`);
+  console.log(`Let's add some team members!`);
 
   return inquirer
     .prompt([
@@ -82,7 +82,7 @@ const addEmployee = () => {
         },
         type: 'input',
         message: "Please enter the employee's GitHub username.",
-        name: 'gitHub',
+        name: 'github',
     },
     {
         when: input => {
@@ -133,7 +133,7 @@ const writeFile = (data) => {
       console.log(err);
       return;
     } else {
-      console.log("Your page has been succesfully created!!");
+      console.log("Your team profile has been succesfully created!!");
     }
   });
 };
